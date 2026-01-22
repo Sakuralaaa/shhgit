@@ -334,13 +334,13 @@ signatures:
     regex: 'gsk_[A-Za-z0-9]{20,}'
     name: 'Groq API Key'
   - part: 'contents'
-    regex: "(?i)cohere.{0,20}(api|token|key).{0,20}(:|=>|=).{0,20}['\"]?[A-Za-z0-9_-]{20,}['\"]?"
+    regex: "(?i)cohere.{0,20}(api|token|key).{0,20}(:|=>|=).{0,20}['\"]?[A-Za-z0-9_-]{32,}['\"]?"
     name: 'Cohere API Key'
   - part: 'contents'
-    regex: "(?i)mistral.{0,20}(api|token|key).{0,20}(:|=>|=).{0,20}['\"]?[A-Za-z0-9_-]{20,}['\"]?"
+    regex: "(?i)mistral.{0,20}(api|token|key).{0,20}(:|=>|=).{0,20}['\"]?[A-Za-z0-9_-]{32,}['\"]?"
     name: 'Mistral API Key'
   - part:  'contents'
-    regex: 'sk_[live|test]_[0-9a-z]{32}'
+    regex: 'sk_(live|test)_[0-9a-z]{32}'
     name: 'Picatic API key'
   - part:  'contents'
     regex: 'sq0atp-[0-9A-Za-z\-_]{22}'
