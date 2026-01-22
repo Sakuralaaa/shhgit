@@ -322,22 +322,22 @@ signatures:
     regex: 'ya29\\.[0-9A-Za-z\\-_]+'
     name: 'Google OAuth Access Token'
   - part: 'contents'
-    regex: 'sk-[A-Za-z0-9]{32,}'
+    regex: 'sk-(?:proj-)?[A-Za-z0-9]{48}'
     name: 'OpenAI API Key'
   - part: 'contents'
-    regex: 'sk-ant-[A-Za-z0-9\\-_]{20,}'
+    regex: 'sk-ant-[A-Za-z0-9_-]{20,}'
     name: 'Anthropic API Key'
   - part: 'contents'
-    regex: 'hf_[A-Za-z0-9]{36,}'
+    regex: 'hf_[A-Za-z0-9]{37}'
     name: 'Hugging Face API Token'
   - part: 'contents'
     regex: 'gsk_[A-Za-z0-9]{20,}'
     name: 'Groq API Key'
   - part: 'contents'
-    regex: "(?i)cohere(.{0,20})?(?-i)['\"][A-Za-z0-9_-]{20,}['\"]"
+    regex: "(?i)cohere(.{0,20})?(?-i)['\"]?[A-Za-z0-9_-]{20,}['\"]?"
     name: 'Cohere API Key'
   - part: 'contents'
-    regex: "(?i)mistral(.{0,20})?(?-i)['\"][A-Za-z0-9_-]{20,}['\"]"
+    regex: "(?i)mistral(.{0,20})?(?-i)['\"]?[A-Za-z0-9_-]{20,}['\"]?"
     name: 'Mistral API Key'
   - part:  'contents'
     regex: 'sk_[live|test]_[0-9a-z]{32}'
