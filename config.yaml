@@ -334,10 +334,10 @@ signatures:
     regex: 'gsk_[A-Za-z0-9]{20,}'
     name: 'Groq API Key'
   - part: 'contents'
-    regex: '(?i)cohere(.{0,20})?(?-i)[''"][A-Za-z0-9_-]{20,}[''"]'
+    regex: "(?i)cohere(.{0,20})?(?-i)['\"][A-Za-z0-9_-]{20,}['\"]"
     name: 'Cohere API Key'
   - part: 'contents'
-    regex: '(?i)mistral(.{0,20})?(?-i)[''"][A-Za-z0-9_-]{20,}[''"]'
+    regex: "(?i)mistral(.{0,20})?(?-i)['\"][A-Za-z0-9_-]{20,}['\"]"
     name: 'Mistral API Key'
   - part:  'contents'
     regex: 'sk_[live|test]_[0-9a-z]{32}'
